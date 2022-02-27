@@ -10,11 +10,14 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img
+                {/* <img
                   className="h-8 w-8"
                   src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                   alt="Workflow"
-                />
+                /> */}
+                <h3 className="text-white px-3 py-2 font-medium">
+                  Fahim Shahriar
+                </h3>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
@@ -153,21 +156,21 @@ const Navbar = () => {
           )}
         </Transition>
       </nav>
-
-      <header className="bg-white shadow">
+      {/* <header className="bg-white shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
         </div>
-      </header>
-      <main>
+      </header> */}
+      /
+      {/* <main>
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          {/* <!-- Replace with your content --> */}
+            content here
           <div className="px-4 py-6 sm:px-0">
             <div className="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
           </div>
-          {/* <!-- /End replace --> */}
+                content here
         </div>
-      </main>
+      </main> */}
     </div>
   );
 };
