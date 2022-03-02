@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
+import resume from "../../resources/resume.pdf";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,32 +26,41 @@ const Navbar = () => {
                   </Link>
 
                   <Link
-                    to="/"
+                    to="/projects"
                     className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
                   >
                     Projects
                   </Link>
 
                   <Link
-                    to="/"
+                    to="/about"
                     className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
                   >
                     About
                   </Link>
 
                   <Link
-                    to="/"
+                    to="/contact"
                     className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
                   >
                     Contact
                   </Link>
 
-                  <Link
-                    to="/"
-                    className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
+                  <a
+                    className="px-4 py-2 mt-2 text-gray-700 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline border-2 border-indigo-900"
+                    href={resume}
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >
                     Resume
-                  </Link>
+                  </a>
+
+                  {/* <Link
+                    to="/"
+                    className="px-4 py-2 mt-2 text-gray-700 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline border-2 border-indigo-900"
+                  >
+                    Resume
+                  </Link> */}
                 </div>
               </div>
             </div>
