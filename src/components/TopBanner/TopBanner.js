@@ -19,7 +19,7 @@ const TopBanner = () => {
         style={{ height: "90vh" }}
       >
         <FontAwesomeIcon icon={faCoffee} />
-        <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+        {/* <FontAwesomeIcon icon="fa-brands fa-linkedin" /> */}
         {/* <FontAwesomeIcon icon={solid("user-secret")} />
         <FontAwesomeIcon icon={regular("coffee")} />
         <FontAwesomeIcon icon={brands("twitter")} /> */}
